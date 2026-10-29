@@ -63,22 +63,6 @@ npm run preview
 
 ---
 
-## 🐛 Intentional Defect Architecture (BUG-01 to BUG-12)
-
-ShopSphere contains exactly **12 intentional, deterministic bugs** distributed across the user journey:
-
-1. **BUG-01**: Non-functional button (Cart page coupon "Apply" button).
-2. **BUG-02**: Incorrect search (Case-sensitive product title comparison).
-3. **BUG-03**: Broken category filter ("Audio" category pill returns 0 products).
-4. **BUG-04**: Incorrect cart subtotal (Subtotal reducer ignores item quantity).
-5. **BUG-05**: Missing registration validation (Registration form omits password length and confirmation checks).
-6. **BUG-06**: Duplicate contact submission (Support form lacks debounce and submit button lock).
-7. **BUG-07**: Success feedback on validation failure (Profile form shows green success toast alongside red validation errors).
-8. **BUG-08**: Stale localStorage UI state (Profile update writes to storage but fails to update React context).
-9. **BUG-09**: Reproducibly stale mock product cache (Cache check ignores `forceRefresh` parameter).
-10. **BUG-10**: Incorrect local mock API endpoint (Misspelled URL `/api/v1/produts/stock-status` yields HTTP 404 in DevTools Network tab).
-11. **BUG-11**: Reproducible uncaught JavaScript error (Clicking warranty inspection on accessory items throws `TypeError: Cannot read properties of undefined`).
-12. **BUG-12**: Reproducible mobile layout failure (Hardcoded 880px width on fulfillment banner creates horizontal overflow on mobile viewports < 768px).
 
 ---
 
